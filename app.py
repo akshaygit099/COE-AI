@@ -34,7 +34,7 @@ def generate_test_cases(requirement):
 
 # Streamlit app layout
 
-st.title('Test Case Generator : COE-AI|Akshay Bhatia')
+st.title('Test Case Generator : COE-AI Test | Akshay Bhatia')
 
 st.subheader("Have fun using this...")
 
