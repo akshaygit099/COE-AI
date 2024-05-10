@@ -54,7 +54,7 @@ file_path = "C:/Users/akshay.bhatia/Documents/AI Policy - Centric India.docx"
 st.download_button(
     label="Download AI Policy Usage",
     data=open(file_path, "rb").read(),
-    file_name="AI_Policy_Usage.docx",
+    file_name="AI Policy.docx",
     mime="application/docx"
 )
 
