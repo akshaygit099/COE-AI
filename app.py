@@ -43,7 +43,7 @@ st.write('Enter your software requirement(s) to generate test cases.')
 # Text area for user to enter the software requirement
 if st.button('Insurance Domain'):
     requirement = "Create BDD Test Cases for Insurance Domain"
-else
+else :
     requirement = st.text_area("Requirement", height=150)
 
 # Button to generate test cases
