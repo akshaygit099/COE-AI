@@ -75,4 +75,3 @@ if st.button('Generate Test Cases'):
 if st.button('Insurance Domain'):
     requirement = "Create BDD Test Cases for Insurance Domain"
     st.text_area("Requirement", value=requirement, height=150)
-    st.button('Generate Test Cases', key='insurance_button')
