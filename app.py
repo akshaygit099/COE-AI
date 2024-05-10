@@ -48,7 +48,15 @@ if 'search_history' not in st.session_state:
 requirement = st.text_area("Requirement", height=150)
 
 # Display the link to the Word file
-st.markdown("[AI Policy Usage](C:/Users/akshay.bhatia/Documents/AI Policy - Centric India.docx)")
+file_path = "C:/Users/akshay.bhatia/Documents/AI Policy - Centric India.docx"
+
+# Display the download button
+st.download_button(
+    label="Download AI Policy Usage",
+    data=open(file_path, "rb").read(),
+    file_name="AI_Policy_Usage.docx",
+    mime="application/docx"
+)
 
 # Button to generate test cases
 
