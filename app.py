@@ -47,14 +47,6 @@ if 'search_history' not in st.session_state:
 
 requirement = st.text_area("Requirement", height=150)
 
-# Display the download button
-st.download_button(
-    label="Download AI Policy Usage",
-    data=open(file_path, "rb").read(),
-    file_name="AI Policy.docx",
-    mime="application/docx"
-)
-
 # Button to generate test cases
 
 if st.button('Generate Test Cases'):
