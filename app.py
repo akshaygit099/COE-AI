@@ -40,6 +40,9 @@ st.subheader("Have fun using this...")
 
 st.write('Enter your software requirement(s) to generate test cases.')
 
+if 'search_history' not in st.session_state:
+    st.session_state.search_history = []
+
 # Text area for user to enter the software requirement
 
 requirement = st.text_area("Requirement", height=150)
@@ -54,8 +57,7 @@ if st.button('Generate Test Cases'):
         with st.spinner('Generating...'):
 
             try:
-                st.session_state.search_history.append(requirement)
-
+                
                 test_cases = generate_test_cases(requirement)
 
                 st.success('Generated Test Cases')
@@ -67,6 +69,8 @@ if st.button('Generate Test Cases'):
                 st.error('An error occurred while generating test cases.')
 
                 st.error(e)
+
+            st.session_state.search_history.append(requirement)
 
     else:
 
