@@ -41,6 +41,9 @@ st.subheader("Have fun using this...")
 st.write('Enter your software requirement(s) to generate test cases.')
 
 # Text area for user to enter the software requirement
+if st.button('Insurance Domain'):
+    requirement = "Create BDD Test Cases for Insurance Domain"
+else
     requirement = st.text_area("Requirement", height=150)
 
 # Button to generate test cases
@@ -68,17 +71,3 @@ if st.button('Generate Test Cases'):
     else:
 
         st.error('Please enter a requirement to generate test cases.')
-
-if st.button('Insurance Domain'):
-    requirement = "Create BDD Test Cases for Insurance Domain"
-    st.text_area("Requirement", value=requirement, height=150)
-    # Triggering the generation of test cases by clicking the existing "Generate Test Cases" button
-    if requirement:
-        with st.spinner('Generating...'):
-            try:
-                test_cases = generate_test_cases(requirement)
-                st.success('Generated Test Cases')
-                st.write(test_cases)
-            except Exception as e:
-                st.error('An error occurred while generating test cases.')
-                st.error(e)
