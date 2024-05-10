@@ -47,6 +47,10 @@ if 'search_history' not in st.session_state:
 
 requirement = st.text_area("Requirement", height=150)
 
+st.title('Streamlit App with Word File Link')
+
+# Display the link to the Word file
+st.markdown('[AI Policy Usage](file:///C:/Users/akshay.bhatia/Documents/AI Policy - Centric India.docx)')
 
 # Button to generate test cases
 
