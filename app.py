@@ -68,7 +68,7 @@ if st.button('Generate Test Cases'):
 
     else:
 
-        st.error('Please enter a requirement to generate test cases.')
+        st.error('Please enter a requirement to generate test cases.'):
 
  # Append the search history
                 st.write('Search History:')
