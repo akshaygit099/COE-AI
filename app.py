@@ -70,13 +70,12 @@ if st.button('Generate Test Cases'):
 
         st.error('Please enter a requirement to generate test cases.')
 
-
- st.write('Search History:')
-                search_history.append(requirement)
-                st.write(search_history)
+ # Append the search history
+                st.write('Search History:')
+                st.session_state.search_history.append(requirement)
+                st.write(st.session_state.search_history)
             except Exception as e:
                 st.error('An error occurred while generating test cases.')
                 st.error(e)
     else:
         st.error('Please enter a requirement to generate test cases.')
-
