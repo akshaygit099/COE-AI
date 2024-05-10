@@ -69,3 +69,10 @@ if st.button('Generate Test Cases'):
     else:
 
         st.error('Please enter a requirement to generate test cases.')
+
+
+# Button for Insurance Domain
+if st.button('Insurance Domain'):
+    requirement = "Create BDD Test Cases for Insurance Domain"
+    st.text_area("Requirement", value=requirement, height=150)
+    st.button('Generate Test Cases', key='insurance_button')
