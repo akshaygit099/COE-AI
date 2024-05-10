@@ -47,9 +47,6 @@ if 'search_history' not in st.session_state:
 
 requirement = st.text_area("Requirement", height=150)
 
-# Display the link to the Word file
-file_path = "C:/Users/akshay.bhatia/Documents/AI Policy - Centric India.docx"
-
 # Display the download button
 st.download_button(
     label="Download AI Policy Usage",
