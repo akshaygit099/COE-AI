@@ -47,9 +47,10 @@ requirement = st.text_area("Requirement", height=150)
 st.write('Search History:')
 st.session_state.search_history.append(requirement)
 st.write(st.session_state.search_history)
+
 except Exception as e:
-st.error('An error occurred while generating test cases.')
-st.error(e)
+                st.error('An error occurred while generating test cases.')
+                st.error(e)
 
 # Button to generate test cases
 
