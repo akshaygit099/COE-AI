@@ -44,7 +44,7 @@ def generate_test_cases(requirement):
 st.title('Test Case Generator : COE-AI Test')
 
 
-st.write('Enter your software requirement(s) to generate test cases.')
+st.write('Enter your software requirement(s) to generate test cases :')
 
 if 'search_history' not in st.session_state:
     st.session_state.search_history = []
