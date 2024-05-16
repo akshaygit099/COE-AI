@@ -40,8 +40,6 @@ def generate_test_cases(requirement):
     return response.choices[0].message.content
 
 # Streamlit app layout
-st.link_button("Centric India - AI Tool Usage Policy ", "https://centricconsultingllc.sharepoint.com/sites/CentricIndia/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FCentricIndia%2FShared%20Documents%2FHR%2FCentric%20India%20AI%20Tool%20Usage%20Policy%5F2023%2Epdf&parent=%2Fsites%2FCentricIndia%2FShared%20Documents%2FHR")
-
 st.title('Test Case Generator :  COE-AI Test')
 
 st.write('Enter your software requirement(s) to generate test cases :')
@@ -51,6 +49,8 @@ if 'search_history' not in st.session_state:
 
 
 # Text area for user to enter the software requirement
+
+st.link_button("Centric India - AI Tool Usage Policy ", "https://centricconsultingllc.sharepoint.com/sites/CentricIndia/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FCentricIndia%2FShared%20Documents%2FHR%2FCentric%20India%20AI%20Tool%20Usage%20Policy%5F2023%2Epdf&parent=%2Fsites%2FCentricIndia%2FShared%20Documents%2FHR")
 
 requirement = st.text_area("Requirement", height=150)
 
