@@ -12,6 +12,13 @@ OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
 openai.api_key = OPENAI_API_KEY
 
+st.markdown("""
+<h1 style='text-align: center; color: white; background-color:#2c1a5d'>
+<span style='color: #fdb825'>((</span>
+             CENTRIC 
+<span style='color: #fdb825'>))</span></h1>"""
+            , unsafe_allow_html=True)
+
 # Define the function to generate test cases
 
 def generate_test_cases(requirement):
