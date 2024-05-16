@@ -41,9 +41,8 @@ def generate_test_cases(requirement):
 
 # Streamlit app layout
 
-st.title('Test Case Generator : COE-AI Test | Akshay Bhatia')
+st.title('Test Case Generator : COE-AI Test'| Centric India)
 
-st.subheader("Have fun using this...")
 
 st.write('Enter your software requirement(s) to generate test cases.')
 
