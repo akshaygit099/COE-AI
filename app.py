@@ -17,7 +17,7 @@ st.markdown("""
 <span style='color: #fdb825'>((</span>
              CENTRIC 
 <span style='color: #fdb825'>))</span></h1>
-<p style='font-size: 20px; text-align: center;'>This utility generates detailed software test cases based on user requirements, including BDD format, powered by ChatGPT. It's designed to streamline your testing process and improve efficiency.</p>
+<p style='font-size: 15px; text-align: center;'>This utility generates detailed software test cases based on user requirements, including BDD format, powered by ChatGPT. It's designed to streamline your testing process and improve efficiency.</p>
 """, unsafe_allow_html=True)
 
 
