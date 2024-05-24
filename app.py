@@ -13,6 +13,14 @@ OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 openai.api_key = OPENAI_API_KEY
 
 st.markdown("""
+    <style>
+        .custom-paragraph {
+            margin-bottom: 10px;  /* Adjust this value as needed */
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
 <h1 style='text-align: center; color: white; background-color:#2c1a5d'>
 <span style='color: #fdb825'>((</span>
              CENTRIC 
