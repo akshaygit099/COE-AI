@@ -41,14 +41,6 @@ def generate_test_cases(requirement):
 
     return response.choices[0].message.content
 
-st.markdown("""
-    <style>
-        .custom-paragraph {
-            margin-bottom: 10px;  /* Adjust this value as needed */
-        }
-    </style>
-""", unsafe_allow_html=True)
-
 # Streamlit app layout
 st.title('Test Case Generator :  COE-AI Test')
 
