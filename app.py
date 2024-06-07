@@ -27,7 +27,7 @@ def generate_test_cases(requirement):
 
     response = openai.chat.completions.create(
 
-        model="gpt-3.5-turbo",
+        model="gpt-4-turbo",
 
         messages=[
 
